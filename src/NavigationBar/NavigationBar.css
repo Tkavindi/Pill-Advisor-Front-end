@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&family=Rowdies:wght@300;400;700&display=swap");
+
+.logofont {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.blueText{
+    color: #1dcd8d;
+}
+
+.navBar{
+    min-height: 10vh;
+}
+

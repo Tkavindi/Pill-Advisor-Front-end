@@ -1,0 +1,33 @@
+.contact {
+    padding: 20px;
+    background-color: #1dcd8d;
+    min-height: 68vh;
+  }
+  
+  .contact img {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  .contact .text-light {
+    padding: 20px;
+  }
+  
+  .icons {
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 767.98px) {
+    .contact {
+      flex-direction: column;
+    }
+  
+    .text-light {
+      text-align: center;
+    }
+  
+    .icons {
+      justify-content: center;
+    }
+  }
+  

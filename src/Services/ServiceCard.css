@@ -1,0 +1,9 @@
+.list {
+    list-style: circle;
+}
+
+@media (min-width: 576px) {
+    .card {
+        width: 20%; 
+    }
+}

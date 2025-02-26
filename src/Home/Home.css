@@ -1,0 +1,53 @@
+.largebox {
+    min-height: 90vh;
+    background-color: #ecfdfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .box1 {
+        min-height: 90vh;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .t{
+        text-align: left;
+    }
+    .b{
+        justify-content: flex-start;
+    }
+   
+    
+}
+@media (max-width: 768px) {
+
+    .b{
+        justify-content: center;
+    }
+}
+
+.title {
+    color: #1dcd8d;
+}
+
+.para {
+    text-align: justify;
+}
+
+.knowbtn {
+    background-color: #1dcd8d;
+    font-weight: bold;
+    border: none;
+    
+    
+}
