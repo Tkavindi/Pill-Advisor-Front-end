@@ -22,7 +22,7 @@ const Testimonials = () => {
 
   const fetchSearchCount = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/search-count");
+      const response = await axios.get("https://pill-advisor-back-end.fly.dev/api/search-count");
       setSearchCount(response.data.count);
     } catch (error) {
       console.error("Error fetching search count:", error);

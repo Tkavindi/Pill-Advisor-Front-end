@@ -19,12 +19,12 @@ const Search = () => {
         setResult(null);
 
         try {
-            await axios.post('http://localhost:3000/api/search', { name: medicine });
+            await axios.post('https://pill-advisor-back-end.fly.dev/api/search', { name: medicine });
 
             // Immediately update the search count in the UI
             window.dispatchEvent(new Event("searchCompleted")); 
 
-            const response = await axios.post('http://localhost:3000/api/medicine-info', { name: medicine });
+            const response = await axios.post('https://pill-advisor-back-end.fly.dev/api/medicine-info', { name: medicine });
             setResult(response.data[0]);
         } catch (error) {
             console.error('Error fetching data:', error);
