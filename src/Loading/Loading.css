@@ -1,5 +1,18 @@
-.out{
+.out {
     min-height: 100vh;
     background-color: #1dcd8d;
+    width: 75%;  /* Reduced width */
+    margin: auto; /* Centers the div */
+    border-radius: 15px; /* Optional: Adds rounded edges */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.loading-container img {
+    max-width: 350px; /* Adjusted image size */
+}
+
+.loading-container .title {
+    font-size: 2rem; /* Slightly smaller font */
+}

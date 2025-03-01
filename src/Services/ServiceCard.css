@@ -7,3 +7,10 @@
         width: 20%; 
     }
 }
+
+.brandcolor {
+    color: #1dcd8d;
+    text-align: center; /* Center the title */
+    font-weight: bold;
+    margin-top: 10px;
+}

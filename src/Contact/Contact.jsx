@@ -17,7 +17,7 @@ const Contact = () => {
             <h5 className="mt-4">PHONE</h5>
             <p>071-7 89 1418</p>
             <h5 className="mt-4">EMAIL</h5>
-            <p>philadvisor@gmail.com</p>
+            <p>pilladvisor@gmail.com</p>
             <h5 className="mt-4">SOCIAL</h5>
             <div className="icons d-flex justify-content-center justify-content-lg-start">
               <FaFacebookF className="me-2" />

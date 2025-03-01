@@ -4,7 +4,7 @@ import ServiceCard from "./ServiceCard";
 import UsesIcon from "../assets/usesIcon.png";
 import CarfulIcon from "../assets/cautionIcon.png";
 import HowtoIcon from "../assets/howtoIcon.png";
-import SideeffectIcon from "../assets/sideeffectIcon.png"
+import SideeffectIcon from "../assets/sideeffectIcon.png";
 
 const Services = () => {
   return (
@@ -12,7 +12,7 @@ const Services = () => {
       <section className="services container" id="services">
         <div className="pt-5">
           <h1 className="brandcolor">Our Services</h1>
-          <p className="py-3"> 
+          <p className="py-3">
             Welcome to PillAdvisor, where knowledge meets health. We're
             dedicated to providing clear and reliable information on
             medications, empowering you to make informed decisions about your
@@ -40,18 +40,17 @@ const Services = () => {
 
           <ServiceCard
             title="HOW TO TAKE IT"
-            li1="Find instructions on dosage, frequency, and administration methods."
-            li2="Get guidance on whether to take it with food, water, or at specific times."
+            li1="Learn the correct dosage and how often to take the medication."
+            li2="Understand whether you should take it with food, water, or at specific times."
             icon={HowtoIcon}
           />
 
           <ServiceCard
             title="POSSIBLE SIDE EFFECTS"
-            li1="Find instructions on dosage, frequency, and administration methods."
-            li2="Get guidance on whether to take it with food, water, or at specific times."
+            li1="Be aware of common side effects, such as dizziness or nausea."
+            li2="Know when to consult your doctor if side effects persist or worsen."
             icon={SideeffectIcon}
           />
-
         </div>
       </section>
     </>

@@ -1,9 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./Testimonial.css";
 
-const Testimonnaials = () => {
+const Testimonials = () => {
+  const [searchCount, setSearchCount] = useState(0);
+
+  useEffect(() => {
+    fetchSearchCount();
+
+    // Listen for searchCompleted event
+    const handleSearchCompleted = () => {
+      setSearchCount(prevCount => prevCount + 1); // Increase immediately
+    };
+
+    window.addEventListener("searchCompleted", handleSearchCompleted);
+
+    return () => {
+      window.removeEventListener("searchCompleted", handleSearchCompleted);
+    };
+  }, []);
+
+  const fetchSearchCount = async () => {
+    try {
+      const response = await axios.get("http://localhost:3000/api/search-count");
+      setSearchCount(response.data.count);
+    } catch (error) {
+      console.error("Error fetching search count:", error);
+    }
+  };
+
   return (
-    <section className="testimonials container ">
+    <section className="testimonials container">
       <div className="uppersection text-center">
         <h1 className="brandcolor pt-5">Client Testimonials</h1>
         <p className="text-center">This is what users say about our service</p>
@@ -20,12 +47,14 @@ const Testimonnaials = () => {
       </div>
 
       <div className="lowersection text-center">
-      <h1 className="brandcolor">Search Count</h1>
-      <h2 className="brandcolor">001</h2>
-      <p className="text-center">See how often medications are searched, trusted by our users.</p>
+        <h1 className="brandcolor">Search Count</h1>
+        <h2 className="brandcolor">{searchCount}</h2>
+        <p className="text-center">
+          See how often medications are searched, trusted by our users.
+        </p>
       </div>
     </section>
   );
 };
 
-export default Testimonnaials;
+export default Testimonials;
